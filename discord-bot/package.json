@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "test": "node test/connection.test",
+    "deploy": "node deploy-commands.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.12.1",
+    "socket.io-client": "^4.7.1"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

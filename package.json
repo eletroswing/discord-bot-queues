@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot-response-queue",
+  "version": "1.0.0",
+  "description": "Make a long response time from an discord bot into a queue, users can view their position in queue, has server use background workers to run the heavy job then response to user on discord",
+  "repository": {
+    "type": "git",
+    "url": "discord-bot-queues"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "queues",
+    "job",
+    "response",
+    "background",
+    "jobs",
+    "time",
+    "wait"
+  ],
+  "author": "eletroswing",
+  "license": "MIT"
+}

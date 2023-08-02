@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "compose:up": "docker-compose -f ./docker-compose.yml up -d",
+    "compose:down": "docker-compose -f ./docker-compose.yml down"
+  },
+  "dependencies": {
+    "bull": "^4.10.4",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
