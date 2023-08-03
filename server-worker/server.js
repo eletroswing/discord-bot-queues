@@ -27,6 +27,9 @@ processQueue.process(1, async (job, done) => {
 
     masterQueue[key].queue = masterQueue[key].queue - 1;
   });
+
+  delete masterQueue[job.data.id];
+  
   ///////////////////////
 
   //do your heavy work here
@@ -35,7 +38,6 @@ processQueue.process(1, async (job, done) => {
   await new Promise((resolve) => setTimeout(resolve, 6000));
 
   //////////////////////
-  delete masterQueue[job.data.id];
 
   io.emit("queue-response", {
     prompt: job.data.prompt,
